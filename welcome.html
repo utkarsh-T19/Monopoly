@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home</title>
+</head>
+<script src="script.js"></script>
+<body>
+    <a href="welcome.html">Home</a>
+    <a href="rules.html">Rules</a>
+
+    </p><button id="playNowButton" onclick="playnow()">PLAY NOW</button>
+    <div id="players" style="display: none;">
+        Number of Players:
+        <label id="star"></label><br>
+        <input type="radio" id="twoPlayers" name="noPlayers" value="2">
+        <label for="twoPlayers">2</label><br>
+        <input type="radio" id="threePlayers" name="noPlayers" value="3">
+        <label for="threePlayers">3</label><br>
+        <input type="radio" id="fourPlayers" name="noPlayers" value="4">
+        <label for="fourPlayers">4</label><br>
+        <input type="radio" id="fivePlayers" name="noPlayers" value="5">
+        <label for="fivePlayers">5</label><br>
+        <input type="radio" id="sixPlayers" name="noPlayers" value="6">
+        <label for="sixPlayers">6</label><br>
+        <label id="errorMsg"></label><br>
+        <button id="nextNames" onclick="nextname()">Next</button>
+    </div>
+
+    <div id="twoNames" style="display: none;">
+        Names :
+        <label id="star2"></label><br>
+        <input type="text" class="playerOne" id="playerOne2" placeholder="Player 1"><p></p>
+        <input type="text" class="playerTwo" id="playerTwo2" placeholder="Player 2"><br>
+        <label id="errorMsg2"></label><br>
+        <button id="startPlay" onclick="startGame()">Start Game</button>
+        <button id="backToPlayers" onclick="backPlay()">Back</button>
+    </div>
+
+    <div id="threeNames" style="display: none;">
+        Names :
+        <label id="star3"></label><br>
+        <input type="text" class="playerOne" id="playerOne3" placeholder="Player 1"><p></p>
+        <input type="text" class="playerTwo" id="playerTwo3" placeholder="Player 2"><p></p>
+        <input type="text" class="playerThree" id="playerThree3" placeholder="Player 3"><br>
+        <label id="errorMsg3"></label><br>
+        <button id="startPlay" onclick="startGame()">Start Game</button>
+        <button id="backToPlayers" onclick="backPlay()">Back</button>
+    </div>
+
+    <div id="fourNames" style="display: none;">
+        Names :
+        <label id="star4"></label><br>
+        <input type="text" class="playerOne" id="playerOne4" placeholder="Player 1"><p></p>
+        <input type="text" class="playerTwo" id="playerTwo4" placeholder="Player 2"><p></p>
+        <input type="text" class="playerThree" id="playerThree4" placeholder="Player 3"><p></p>
+        <input type="text" class="playerFour" id="playerFour4" placeholder="Player 4"><br>
+        <label id="errorMsg4"></label><br>
+        <button id="startPlay" onclick="startGame()">Start Game</button>
+        <button id="backToPlayers" onclick="backPlay()">Back</button>
+    </div>
+
+    <div id="fiveNames" style="display: none;">
+        Names :
+        <label id="star5"></label><br>
+        <input type="text" class="playerOne" id="playerOne5" placeholder="Player 1"><p></p>
+        <input type="text" class="playerTwo" id="playerTwo5" placeholder="Player 2"><p></p>
+        <input type="text" class="playerThree" id="playerThree5" placeholder="Player 3"><p></p>
+        <input type="text" class="playerFour" id="playerFour5" placeholder="Player 4"><p></p>
+        <input type="text" class="playerFive" id="playerFive5" placeholder="Player 5"><br>
+        <label id="errorMsg5"></label><br>
+        <button id="startPlay" onclick="startGame()">Start Game</button>
+        <button id="backToPlayers" onclick="backPlay()">Back</button>
+    </div>
+
+    <div id="sixNames" style="display: none;">
+        Names :
+        <label id="star6"></label><br>
+        <input type="text" class="playerOne" id="playerOne6" placeholder="Player 1"><p></p>
+        <input type="text" class="playerTwo" id="playerTwo6" placeholder="Player 2"><p></p>
+        <input type="text" class="playerThree" id="playerThree6" placeholder="Player 3"><p></p>
+        <input type="text" class="playerFour" id="playerFour6" placeholder="Player 4"><p></p>
+        <input type="text" class="playerFive" id="playerFive6" placeholder="Player 5"><p></p>
+        <input type="text" class="playerSix" id="playerSix6" placeholder="Player 6"><br>
+        <label id="errorMsg6"></label><br>
+        <button id="startPlay" onclick="startGame()">Start Game</button>
+        <button id="backToPlayers" onclick="backPlay()">Back</button>
+    </div>
+
+</body>
+</html>
